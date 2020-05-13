@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="expression.css">
+	</head>
+	<body>
+		<div id="kalkulator">
+			<div id="wyswietlacz"></div>
+			<button onclick="wykonajTryg('sin')">sin</button>
+			<button onclick="wykonajTryg('cos')">cos</button>
+			<button onclick="wykonajTryg('tg')">tg</button>
+			<button onclick="wykonajTryg('ctg')">ctg</button>
+			<button onclick="wyswietl('//')">DC</button>
+			<br>
+			<button class="cyfra" onclick="wyswietl(7)">7</button>
+			<button class="cyfra" onclick="wyswietl(8)">8</button>
+			<button class="cyfra" onclick="wyswietl(9)">9</button>
+			<button onclick="wyswietl('+')">+</button>
+			<button onclick="wyswietl('%')">MOD</button>
+			<br>
+			<button class="cyfra" onclick="wyswietl(4)">4</button>
+			<button class="cyfra" onclick="wyswietl(5)">5</button>
+			<button class="cyfra" onclick="wyswietl(6)">6</button>
+			<button onclick="wyswietl('-')">-</button>
+			<button onclick="pierwiastkuj()">&radic;</button>
+			<br>
+			<button class="cyfra" onclick="wyswietl(1)">1</button>
+			<button class="cyfra" onclick="wyswietl(2)">2</button>
+			<button class="cyfra" onclick="wyswietl(3)">3</button>
+			<button onclick="wyswietl('/')">/</button>
+			<button onclick="poteguj()" id="potega">x<sup>2</sup></button>
+			<br>
+			<button id="wyczysc" onclick="wyczysc()">C</button>
+			<button class="cyfra" onclick="wyswietl(0)">0</button>
+			<button id="rowna" onclick="wykonaj()">=</button>
+			<button onclick="wyswietl('*')">*</button>
+			<button onclick="wyswietl('.')">.</button>
+		</div>
+		<div id="polekomorek">
+			<button class="komorka" id="kom1" onclick="uzyjKomorki('1')">#</button>
+			<button class="komorka" id="kom2" onclick="uzyjKomorki('2')">#</button>
+			<button class="komorka" id="kom3" onclick="uzyjKomorki('3')">#</button>
+			<button class="komorka" id="kom4" onclick="uzyjKomorki('4')">#</button>
+			<button class="komorka" id="kom5" onclick="uzyjKomorki('5')">#</button>
+			<button class="komorka" id="kom6" onclick="uzyjKomorki('6')">#</button>
+			<button class="komorka" id="kom7" onclick="uzyjKomorki('7')">#</button>
+			<button class="komorka" id="kom8" onclick="uzyjKomorki('8')">#</button>
+			<button class="komorka" id="kom9" onclick="uzyjKomorki('9')">#</button>
+			<button class="komorka" id="kom10" onclick="uzyjKomorki('10')">#</button>
+		</div>
+		<script src="expression.js"></script>
+	</body>
+</html>
